@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PosMap</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="slash">/</string>
+    <string name="maxCharacter">140</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+</resources>

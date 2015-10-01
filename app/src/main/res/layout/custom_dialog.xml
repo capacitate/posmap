@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/input_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/charaterCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_msg"
+        android:layout_toLeftOf="@+id/slash"
+        />
+    <TextView
+        android:id="@+id/slash"
+        android:text="@string/slash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_msg"
+        android:layout_toLeftOf="@+id/maxcharacter"
+        />
+    <TextView
+        android:id="@+id/maxcharacter"
+        android:text="@string/maxCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_msg"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maxcharacter"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/okBtn"
+            android:text="@string/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maxcharacter"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/cacelBtn"
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/maxcharacter"
+            android:layout_toRightOf="@+id/okBtn"
+            android:layout_centerHorizontal="true"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
